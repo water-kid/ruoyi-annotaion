@@ -1,0 +1,19 @@
+spring:
+  datasource:
+     type: com.alibaba.druid.pool.DruidDataSource
+     driverClassName: com.mysql.cj.jdbc.Driver
+     ds:
+       master:
+         url: jdbc:mysql:///test09?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+         username: root
+         password: root
+
+       slave:
+         url: jdbc:mysql:///test08?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+         username: root
+         password: root
+
+     initialSize: 5
+     minIdle: 10
+     maxActive: 20
+     maxWait: 60000
