@@ -26,11 +26,11 @@ public class LoadDataSource {
         HashMap<String, DataSource> map = new HashMap<>();
         for (String dsName : allDs.keySet()) {
             Map<String, String> ds = allDs.get(dsName);
-//            DruidDataSource druidDataSource = new DruidDataSource();
-//            druidDataSource.setUrl(ds.get("url"));
-//            druidDataSource.setUsername(ds.get("username"));
-//            druidDataSource.setPassword(ds.get("password"));
-            DruidDataSource druidDataSource = (DruidDataSource) DruidDataSourceFactory.createDataSource(ds);
+            DruidDataSource druidDataSource = new DruidDataSource();
+            druidDataSource.setUrl(ds.get("url"));
+            druidDataSource.setUsername(ds.get("username"));
+            druidDataSource.setPassword(ds.get("password"));
+//            DruidDataSource druidDataSource = (DruidDataSource) DruidDataSourceFactory.createDataSource(ds);
             map.put(dsName,druidProperties.dataSource(druidDataSource));
         }
 
