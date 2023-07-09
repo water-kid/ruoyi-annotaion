@@ -2,7 +2,7 @@ package com.cj.service;
 
 import com.cj.annotation.DataSource;
 import com.cj.mapper.UserMapper;
-import com.cj.model.User;
+import com.cj.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

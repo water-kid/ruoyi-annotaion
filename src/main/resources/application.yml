@@ -4,7 +4,7 @@ spring:
      driverClassName: com.mysql.cj.jdbc.Driver
      ds:
        master:
-         url: jdbc:mysql:///test09?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+         url: jdbc:mysql:///ry-vue?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
          username: root
          password: root
 
